@@ -78,7 +78,7 @@
 }
 
 .homeIcon{
-    fill:#1362E2;
+    fill:#1362E2 !important;
     margin-right:4px;
 }
 
@@ -87,13 +87,13 @@
 .homeBtn:hover .homeIcon{
     background-color: #F5F7F7;
     color: #203645;
-    fill: #203645;
+    fill: #203645 !important;
 }
 
 .homeBtn:focus{
     background-color: #FCFCFC;
     color: #203645;
-    fill: #203645;
+    fill: #203645 !important;
     box-shadow: 0px 0px 0px 4px rgba(19, 98, 226, 0.25);
 }
 .homeBtn:focus .homeLink,
