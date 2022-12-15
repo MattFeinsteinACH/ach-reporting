@@ -4,7 +4,7 @@
     align-items: flex-start;
     padding: 0px;
     gap: 8px;
-    width: 661px;
+    /* width: 661px; */
     height: 54px;
     flex: none;
     flex-grow: 0;
@@ -106,9 +106,10 @@
     box-shadow:none;
 }
 
-.activeLink::after{
+.activeIndicator{
     color:#203645;
     width:10px;
     height:10px;
     border-radius: 50%;
+    
 }

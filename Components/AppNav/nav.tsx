@@ -21,6 +21,9 @@ export default function AppNav(props:any){
         setAnchorEl(null);
         setOpenMenuId(null);
     }
+
+    // let activeLink = styles.activeLink;
+
     return(
         <>
          <ul id="menu-topLvl" className={styles.Menu}>
@@ -35,10 +38,10 @@ export default function AppNav(props:any){
                         aria-expanded={open ? 'true' : undefined}
                         onClick={handleClick}
                         endIcon={<KeyboardArrowDownIcon />}
-                        className={isActive ? "activeLink" : ''}
                     >
                         {navItem.navHeading}
                     </Button>
+                    {/* <span style={{display:openMenuId === navItem.navHeading + "_btn" ? 'flex':'none'}} className={styles.activeIndicator}>&nbsp;</span> */}
                     <Menu
                         id={navItem.navHeading}
                         anchorEl={anchorEl}
