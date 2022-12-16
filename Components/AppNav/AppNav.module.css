@@ -15,9 +15,8 @@
    flex-direction: row;
    align-items: center;
    gap: 4px;
-   height: 54px;
+   /* height: 54px; */
    background: #FCFCFC;
-   
    flex: none;
    flex-grow: 0;
 }       
@@ -106,10 +105,17 @@
     box-shadow:none;
 }
 
+.navBtnHldr{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
 .activeIndicator{
-    color:#203645;
+    background:#203645;
     width:10px;
     height:10px;
     border-radius: 50%;
-    
+    margin-top:-15px;
+    margin-left:-15px;
 }

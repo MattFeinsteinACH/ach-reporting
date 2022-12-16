@@ -3,8 +3,18 @@ import Image from 'next/image'
 import AppNav from "../AppNav/nav";
 import AppUserArea from "../AppUserArea/AppUserArea";
 import LogoImg from "../../public/HeartlandLogo.png";
+import { useEffect, useState } from "react";
+import router from "next/router";
 
 export default function AppHeader (props:any){
+    const [active, setActive] = useState<string>();
+    useEffect(() => {
+        // console.log(router.asPath);
+        let pathArr = (router.asPath.split('/'));
+        pathArr.shift();
+        setActive(pathArr[0]);
+    })
+
     return(
         <>
             <div className={styles.appHeader}>
@@ -19,7 +29,7 @@ export default function AppHeader (props:any){
                         <h4>ACH Gateway Administration</h4>
                     </div>
                     <nav className={styles.site_navigation}>
-                        <AppNav/>
+                        <AppNav activeItem={active}/>
                     </nav>
                     <div className={styles.userInfoContainer}>
                         <AppUserArea />
