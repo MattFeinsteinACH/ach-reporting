@@ -1,0 +1,61 @@
+.AccountPageContent{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .pageContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px 40px;
+    background: #F0F3F7;
+    gap: 24px;
+    margin-right: 20px;
+    width:368px;
+  }
+
+  .pageContent p{
+    width:288px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #203645;
+    flex: none;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .pageContentRow{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 24px;
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .inputGroup{
+    display:flex;
+  }
+
+  .infoLbl{
+    width:112px;
+  }
+
+  .dataLbl{
+    width:192px;
+  }
+
+  .accountBtn{
+    color: #1362E2;
+    font-weight:700;
+    background: #FCFCFC;
+    border: 2px solid #1362E2;
+    border-radius: 9999px;
+  }

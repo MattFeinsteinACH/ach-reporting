@@ -3,6 +3,7 @@ import Avatar from '@mui/material/Avatar';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import { useState } from 'react';
 import styles from "./AppUserArea.module.css";
+import Link from "next/link";
 
 export default function AppUserArea(props:any): JSX.Element{
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -63,7 +64,12 @@ export default function AppUserArea(props:any): JSX.Element{
                     onClose={handleClose}
                     onClick={handleClose}
                 >
-                    <MenuItem>Profile</MenuItem>
+                    <MenuItem>
+                      <Link
+                        href="/Home/UserAccount"
+                        className={styles.lnk}
+                      >Profile</Link>
+                    </MenuItem>
                     <MenuItem>Sign Out</MenuItem>
                 </Menu>
             </div>

@@ -26,7 +26,7 @@ export default function AppHeader (props:any){
                             width={142}
                             height={24}
                         />
-                        <h4>ACH Gateway Administration</h4>
+                        <h4>A Global Payments Company</h4>
                     </div>
                     <nav className={styles.site_navigation}>
                         <AppNav activeItem={active}/>

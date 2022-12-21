@@ -2,7 +2,6 @@ import styles from "./AppNav.module.css";
 import { navData } from "./navData.js";
 import Link from "next/link";
 import {Button, Menu, MenuItem } from '@mui/material';
-import { style } from "@mui/system";
 import { useState, useEffect, useRef, SetStateAction } from "react";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import HomeIcon from '@mui/icons-material/Home';
